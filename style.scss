@@ -204,7 +204,7 @@ header {
 			}
 		}
 		.header-bottom{
-			width:700px;
+			width:51%;
 			position:absolute;
 			left:7%;
 			bottom:0;
@@ -561,9 +561,10 @@ main {
 						font-size:3.6rem;
 					}
 				}
-			  .civi-code__content{
+			.civi-code__content{
 					margin-top:15px;
 					border:solid 1px #707070;
+					background-color: #FFF;
 					padding:40px 45px;
 					font-size:1.6rem;
 					line-height:1.7;
@@ -686,25 +687,53 @@ main {
 		padding-top: 120px;
 		padding-bottom: 120px;
 		background-color: #EDFAE8;
-		h3 {
-			font-size: 2.615rem;
-			line-height: 4.5rem;
-			text-align: center;
+		h3.sec-title {
+			margin-bottom: 110px;
 		}
 		p {
-			font-size: 1rem;
+			font-size: 1.6rem;
 			line-height: 2.1875rem;
 			text-align: center;
 		}
 		.contact-top {
 			width: 700px;
-			margin: 0 auto 80px;
+			box-sizing: border-box;
+			margin: 30px auto 80px;
 			background-color: #FFF;
 			padding: 20px 50px;
+			p.bold {
+				font-weight: bold;
+				text-align: center;
+			}
+			.first-phrase {
+				margin-top: 25px;
+				margin-bottom: 40px;
+			}
+			p {
+				font-size: 1.4rem;
+				text-align: initial;
+			}
+		}
+		.contact-form {
+			width: 540px;
+			margin: 0 auto;
 			p {
 				text-align: initial;
-				font-size: 0.875rem;
 			}
+		}
+		input[type="text"] {
+			border-radius: 5px;
+			height: 50px;
+			line-height: 50px;
+			font-size: 40px;
+			border: none;
+			box-shadow: 0px 3px 6px #00000029;
+		}
+		input#name {
+			width: 400px;
+		}
+		input#zipcode, input#prefecture {
+			width: 200px;
 		}
 	}
 }
@@ -712,19 +741,39 @@ main {
 .l-footer {
 	background-color: #5CA642;
 	color: #FFF;
+	padding-top: 30px;
 	.footer-upper {
 		display: flex;
+		width: 60%;
+		margin: 0 auto;
 		.footer-menu {
+			width: 50%;
+			margin-right: 50px;
 			ul {
 				list-style: none;
 				display: flex;
+				justify-content: space-between;
+				li {
+					padding: 2px;
+					text-align: center;
+					width: 170px;
+					border: 1px solid #FFF;
+					a {
+						font-size: 1.6rem;
+					}
+				}
 			}
 		}
 		.footer-contact {
+			width: 50%;
+			font-size: 13px;
 			display: flex;
+			justify-content: space-between;
 		}
 	}
 	.copyright {
+		margin-top: 20px;
 		text-align: center;
+		padding-bottom: 27px;
 	}
 }
