@@ -1085,6 +1085,15 @@ main .contact .contact-form .form-item input {
   margin: 0 10px 0 0;
 }
 
+main .contact .contact-form .form-item .up-image input {
+  width: 100%;
+  height: 30px;
+}
+
+main .contact .contact-form .form-item .up-image input:nth-child(2) {
+  margin-top: 15px;
+}
+
 main .contact .contact-form .name input[type="text"] {
   margin-top: 13px;
   width: 400px;
@@ -1139,7 +1148,7 @@ main .contact .contact-form .form-send {
   text-align: center;
 }
 
-main .contact .contact-form .form-send input[type="button"] {
+main .contact .contact-form .form-send input[type="submit"] {
   width: 200px;
   height: 40px;
   font-weight: 600;
@@ -1152,9 +1161,10 @@ main .contact .contact-form .form-send input[type="button"] {
   background: #fff;
   border: solid 2px #5CA642;
   border-radius: 5px;
+  cursor: pointer;
 }
 
-main .contact .contact-form .form-send input[type="button"]:hover {
+main .contact .contact-form .form-send input[type="submit"]:hover {
   color: #fff;
   background: #5CA642;
 }
@@ -1603,9 +1613,6 @@ footer .l-footer .copyright {
   .contact .contact-caution .caution-item, #contact .contact-caution .caution-item {
     width: auto;
   }
-  .contact .contact-caution .caution-item span, #contact .contact-caution .caution-item span {
-    color: #707070;
-  }
   .contact .contact-form, #contact .contact-form {
     width: 100%;
   }
@@ -1639,85 +1646,56 @@ footer .l-footer .copyright {
   .contact .contact-form .address .long, #contact .contact-form .address .long {
     width: 100%;
   }
-  .contact .contact-form .email input[type="email"], #contact .contact-form .email input[type="email"] {
-    margin-top: 13px;
-    width: 100%;
+  footer .l-footer {
+    min-width: 0px;
   }
-  .contact .contact-form .form-send input[type="button"], #contact .contact-form .form-send input[type="button"] {
-    width: 200px;
-    height: 40px;
-    font-weight: 600;
+  footer .l-footer .footer-upper {
+    padding: 30px 5px 20px;
+    vertical-align: bottom;
+  }
+  footer .l-footer .footer-upper .footer-menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .l-footer .footer-upper .footer-menu ul li {
+    width: 170px;
+    margin-right: 80px;
+  }
+  footer .l-footer .footer-upper .footer-menu ul li:nth-child(2) {
+    margin-top: 20px;
+  }
+  footer .l-footer .footer-upper .footer-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .l-footer .footer-upper .footer-contact p {
+    margin-right: 0px;
+    margin-left: -23px;
+  }
+  footer .l-footer .footer-upper .footer-contact ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 1.1rem;
+  }
+  footer .l-footer .footer-upper .footer-contact ul .footer-mail {
+    margin-right: 0px;
+    margin-top: 10px;
+  }
+  footer .l-footer .footer-upper .footer-contact ul .footer-tel {
+    margin-top: 10px;
+  }
+  footer .l-footer .copyright {
     text-align: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #5CA642;
-    background: #fff;
-    border: solid 2px #5CA642;
-    border-radius: 5px;
+    padding-bottom: 28px;
   }
-}
-
-footer .l-footer {
-  min-width: 0px;
-}
-
-footer .l-footer .footer-upper {
-  padding: 30px 5px 20px;
-  vertical-align: bottom;
-}
-
-footer .l-footer .footer-upper .footer-menu ul {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-footer .l-footer .footer-upper .footer-menu ul li {
-  width: 170px;
-  margin-right: 80px;
-}
-
-footer .l-footer .footer-upper .footer-menu ul li:nth-child(2) {
-  margin-top: 20px;
-}
-
-footer .l-footer .footer-upper .footer-contact {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-footer .l-footer .footer-upper .footer-contact p {
-  margin-right: 0px;
-  margin-left: -23px;
-}
-
-footer .l-footer .footer-upper .footer-contact ul {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 1.1rem;
-}
-
-footer .l-footer .footer-upper .footer-contact ul .footer-mail {
-  margin-right: 0px;
-  margin-top: 10px;
-}
-
-footer .l-footer .footer-upper .footer-contact ul .footer-tel {
-  margin-top: 10px;
-}
-
-footer .l-footer .copyright {
-  text-align: center;
-  padding-bottom: 28px;
 }
 /*# sourceMappingURL=style.css.map */
