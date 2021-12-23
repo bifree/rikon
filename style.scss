@@ -832,16 +832,10 @@ main {
 				.form-text{
 					padding:42px 0 30px;
 				}
-				input[type="textarea"]{
+				textarea{
 					width:100%;
 					height:300px;
 					margin:13px auto 62px;
-					vertical-align:top;
-				}
-				input{
-					width:20px;
-					height:20px;
-					margin:0 10px 0 0;
 				}
 				.up-image{
 					input{
@@ -877,10 +871,20 @@ main {
 				.form-title{
 					padding-bottom:35px;
 				}
+				input{
+					width:20px;
+					height:20px;
+					margin:0 10px 0 0;
+				}
 			}
 			.checkbox{
 				.form-title{
 					padding-bottom:35px;
+				}
+				input{
+					width:20px;
+					height:20px;
+					margin:0 10px 0 0;
 				}
 				.smaller{
 					font-size:1.2rem;
