@@ -1,73 +1,3 @@
-<form action="submit.php" method="post"><!-- //送信ボタンが押されたら「」 -->
-<input type="hidden" name="name" value="<?php echo $name; ?>">
-<input type="hidden" name="fpost-code" value="<?php echo $fpostCode; ?>">
-<input type="hidden" name="prefecture" value="<?php echo $prefecture; ?>">
-<input type="hidden" name="city-addresse" value="<?php echo $cityAddresse; ?>">
-<input type="hidden" name="building-name" value="<?php echo $buildingName; ?>">
->
-<input type="hidden" name="email-address" value="<?php echo $emailAddress; ?>">
-<input type="hidden" name="type" value="<?php echo $type; ?>">
-<input type="hidden" name="agreement1" value="<?php echo $agreement1; ?>">
-<input type="hidden" name="agreement2" value="<?php echo $agreement2; ?>">
-<input type="hidden" name="agreement3" value="<?php echo $agreement3; ?>">
-<input type="hidden" name="document" value="<?php echo $document; ?>">
-<input type="hidden" name="up-image-btn1" value="<?php echo $upImageBtn1; ?>">
-<input type="hidden" name="up-image-btn2" value="<?php echo $upImageBtn2; ?>">
-<input type="hidden" name="remarks" value="<?php echo $remarks; ?>">
-<input type="hidden" name="privacy" value="<?php echo $privacy; ?>">
-
-<h2 class="contact-title">お問い合わせ 内容確認</h2>
-<p>お問い合わせ内容はこちらで宜しいでしょうか？<br>よろしければ「送信する」ボタンを押して下さい。</p>
-<div>
-<label>お名前</label>
-<p><?php echo $name; ?></p>
-</div>
-<div>
-<label>ご住所</label>
-<p><?php echo $postCode; ?></p>
-<p><?php echo $prefecture; ?></p>
-<p><?php echo $cityAdress; ?></p>
-<p><?php echo $buildingName; ?></p>
-</div>
-<div>
-<label>メールアドレス</label>
-<p><?php echo $emailAddress; ?></p>
-</div>
-<div>
-<label>電話番号</label>
-<p><?php echo $tel; ?></p>
-</div>
-<div>
-<label>お申し込みタイプ</label>
-<p><?php echo $type; ?></p>
-</div>
-<div>
-<label>離婚・婚姻の合意について</label>
-<p><?php echo $agreement1; ?></p>
-<p><?php echo $agreement2; ?></p>
-<p><?php echo $agreement3; ?></p>
-</div>
-<div>
-<label>ご本人確認書類について</label>
-<p><?php echo $document; ?></p>
-</div>
-<div>
-<label>【ご本人確認書類を画像ファイルで送る】にチェックをされた方はファイルを選択してください。</label>
-<p><?php echo $pImageBtn1; ?></p>
-<p><?php echo $pImageBtn2; ?></p>
-</div>
-<div>
-<label>備考</label>
-<p><?php echo $remarks; ?></p>
-</div>
-<div>
-<label>プライバシーポリシ</label>
-<p><?php echo $content; ?></p>
-</div>
-<input class="btn" type="button" value="内容を修正する" onclick="history.back(-1)">
-<button class="btn" type="submit" name="submit">送 信</button>
-</form>
-
 <!-- //confirm.php（確認画面）の送信ボタンが押されたら以下を実行する -->
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -135,3 +65,74 @@ header(Location: http://sample.com/.php");//送信完了画面（mailto.php）�
 exit;
 }
 ?>
+
+<form action="submit.php" method="post"><!-- //送信ボタンが押されたら「」 -->
+<input type="hidden" name="name" value="<?php echo $name; ?>">
+<input type="hidden" name="fpost-code" value="<?php echo $fpostCode; ?>">
+<input type="hidden" name="prefecture" value="<?php echo $prefecture; ?>">
+<input type="hidden" name="city-addresse" value="<?php echo $cityAddresse; ?>">
+<input type="hidden" name="building-name" value="<?php echo $buildingName; ?>">
+
+<input type="hidden" name="email-address" value="<?php echo $emailAddress; ?>">
+<input type="hidden" name="type" value="<?php echo $type; ?>">
+<input type="hidden" name="agreement1" value="<?php echo $agreement1; ?>">
+<input type="hidden" name="agreement2" value="<?php echo $agreement2; ?>">
+<input type="hidden" name="agreement3" value="<?php echo $agreement3; ?>">
+<input type="hidden" name="document" value="<?php echo $document; ?>">
+<input type="hidden" name="up-image-btn1" value="<?php echo $upImageBtn1; ?>">
+<input type="hidden" name="up-image-btn2" value="<?php echo $upImageBtn2; ?>">
+<input type="hidden" name="remarks" value="<?php echo $remarks; ?>">
+<input type="hidden" name="privacy" value="<?php echo $privacy; ?>">
+
+<h2 class="contact-title">お問い合わせ 内容確認</h2>
+<p>お問い合わせ内容はこちらで宜しいでしょうか？<br>よろしければ「送信する」ボタンを押して下さい。</p>
+<div>
+<label>お名前</label>
+<p><?php echo $name; ?></p>
+</div>
+<div>
+<label>ご住所</label>
+<p><?php echo $postCode; ?></p>
+<p><?php echo $prefecture; ?></p>
+<p><?php echo $cityAdress; ?></p>
+<p><?php echo $buildingName; ?></p>
+</div>
+<div>
+<label>メールアドレス</label>
+<p><?php echo $emailAddress; ?></p>
+</div>
+<div>
+<label>電話番号</label>
+<p><?php echo $tel; ?></p>
+</div>
+<div>
+<label>お申し込みタイプ</label>
+<p><?php echo $type; ?></p>
+</div>
+<div>
+<label>離婚・婚姻の合意について</label>
+<p><?php echo $agreement1; ?></p>
+<p><?php echo $agreement2; ?></p>
+<p><?php echo $agreement3; ?></p>
+</div>
+<div>
+<label>ご本人確認書類について</label>
+<p><?php echo $document; ?></p>
+</div>
+<div>
+<label>【ご本人確認書類を画像ファイルで送る】にチェックをされた方はファイルを選択してください。</label>
+<p><?php echo $pImageBtn1; ?></p>
+<p><?php echo $pImageBtn2; ?></p>
+</div>
+<div>
+<label>備考</label>
+<p><?php echo $remarks; ?></p>
+</div>
+<div>
+<label>プライバシーポリシ</label>
+<p><?php echo $content; ?></p>
+</div>
+<input class="btn" type="button" value="内容を修正する" onclick="history.back(-1)">
+<button class="btn" type="submit" name="submit">送 信</button>
+</form>
+

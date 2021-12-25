@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="l-header">
+			<div class="header-fixed">
+				<div class="header-top">
+					<div class="logo">
+						<img src="" alt="">
+					</div>
+					<div class="menu">
+						<ul>
+							<li><a href="#feature">特徴</a></li>
+							<li><a href="#price">料金</a></li>
+							<li><a href="#about">離婚届の証人とは？
+							</a></li>
+							<li><a href="#method">ご利用方法</a></li>
+						</ul>
+						<div class="header-btn">
+							<a href="#contact">お申し込みはこちら</a>
+						</div>
+					</div>
+					<div class="sp-menu">
+						<div class="openbtn"><span></span><span></span><span></span></div>
+						<nav class="sp-nav">
+							<ul>
+								<li><a href="#feature">
+									<p>特徴</p>
+									<p><i class="fas fa-arrow-circle-right"></i></p>
+								</a></li>
+								<li><a href="#price">
+									<p>料金</p>
+									<p><i class="fas fa-arrow-circle-right"></i></p>
+								</a></li>
+								<li><a href="#about">
+									<p>離婚届の証人とは？</p>
+									<p><i class="fas fa-arrow-circle-right"></i></p>
+								</a></li>
+								<li><a href="#method">
+									<p>ご利用方法</p>
+									<p><i class="fas fa-arrow-circle-right"></i></p>
+								</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<img src="img/mainview2.png" alt="">
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="main-top">
+			<div class="container">
+				<h2>家族や知人に<br class="sp-br">離婚したことを<br>知られたくない</h2>
+				<div class="main-top-intro">
+					<p>こんな想いはありませんか？</p>
+					<p>離婚届の証人については家族や知人に頼むのが一般的です。<br>
+					しかし、中には<span class="font-green">証人が見つからない</span>方や<span class="font-green">家族や知人に離婚したことを知られたくない</span>
+						という方もいらっしゃると思います。</p>
+					<p>全く知らない赤の他人に依頼することも可能ですが、個人情報の取り扱いなどの問題が発生します。</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="apply">
+			<div class="container">
+				<div class="apply-top">
+					<img src="img/apply1.png">
+				</div>
+				<p>安心して離婚届の証人を<br class="sp-br">見つけたい方に</p>
+				<h2>離婚届 証人代行サービス</h2>
+				<ul>
+					<li>対面不要</li>
+					<li>メールと書面の郵送のみで完結</li>
+					<li>日本全国対応</li>
+				</ul>
+				<div class="apply-btn">
+					お申し込みはこちら
+					<div class="apply-btn__img1">
+						<img src="img/apply-btn1.png"  alt="">
+					</div>
+					<div class="apply-btn__img2">
+						<img src="img/apply-btn2.png"  alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-feature" id="feature">
+			<div class="feature-back">
+				<Img src="img/feature-back.png"  alt="">
+			</div>
+			<div class="container">
+				<div class="main-feature-middle">
+					<h3 class="feature__sec-titte"><span class="feature__sec-title__42green">●サイト名●</span><span class="feature__sec-title__32black">の</span><br>
+					<span class="feature__sec-title__80green">4</span><span class="feature__sec-title__32black">つの</span><span class="feature__sec-title__42black">特徴</span></h3>
+					<div class="feature-wrapper">
+						<div class="feature-box">
+							<h3>01</h3>
+							<h4>対面不要</h4>
+							<p>メールと書面の郵送のみで手続きが完結するため、対面でのやり取りは不要です。そのためお忙しい方やプライバシーを気にする方も安心してご利用できます。</p>
+							<div class="feature__img feature1">
+								<img src="img/feature1.png"  alt="">
+							</div>
+						</div>
+						<div class="feature-box">
+							<h3>02</h3>
+							<h4>日本全国対応</h4>
+							<p>対面でのやり取りが不要なため日本全国の方々のご依頼に対応することが可能です。証人の署名捺印がされた離婚届は日本郵便のスマートレターでお客様へ返送致します。</p>
+							<div class="feature__img feature2">
+								<img src="img/feature2.png"  alt="">
+							</div>
+						</div>
+						<div class="feature-box">
+							<h3>03</h3>
+							<h4>簡単手続き</h4>
+							<p>離婚届証人代行キットのダウンロードやお支払い方法の多様化など、徹底的に無駄を排除した手続きフローによりお客様が負担を感じずに手続きを完了することが可能です。</p>
+							<div class="feature__img feature3"  alt="">
+								<img src="img/feature3.png">
+							</div>
+						</div>
+						<div class="feature-box">
+							<h3>04</h3>
+							<h4>シンプルな料金設定</h4>
+							<p>費用は料金表に記載された金額のみになります。弊社からお客様へ離婚届を返送する際のスマートレター代：180円も金額に含まれています。</p>
+							<div class="feature__img feature4">
+								<img src="img/feature4.png"  alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="price" class="price">
+			<div class="container price__container">
+				<h3 class="sec-title">料金</h3>
+				<div class="price-wrapper">
+					<div class="wrapper-left">
+						<h4><span class="price__32white">証人</span><span class="price__40yellow">1</span><span class="price__32white">名</span><span class="price__32white"><span class="price__25white">の場合</span></h4>
+						<div class="price-display">
+							<p class="price__42green">00,000</p>
+							<p><span class="price__bold">円</span><span class="price__thin">(税込)</span></p>
+							<div class="price__img price__img1">
+								<img src="img/price1.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="wrapper-right">
+						<h4><span class="price__32white">証人</span><span class="price__40yellow">2</span><span class="price__32white">名</span><span class="price__32white"><span class="price__25white">の場合</span></h4>
+						<div class="price-display">
+							<p class="price__42green">00,000</p>
+							<p><span class="price__bold">円</span><span class="price__thin">(税込)</span></p>
+							<div class="price__img price__img2">
+								<img src="img/price2.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="price__smart">弊社からお客様へ離婚届を返送する際の<br class="sp-br">スマートレター代：180円（全国一律）<br class="sp-br">を含みます。</p>
+				<div class="credit-card">
+					<h4>お支払い方法</h4>
+					<p>各種クレジットカードがご利用になれます。</p>
+					<div class="card-type">
+						<div class="type1">
+							<img src="img/card1.png" alt="">
+						</div>
+						<div class="type2">
+							<img src="img/card2.png" alt="">
+						</div>
+						<div class="type3">
+							<img src="img/card3.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="apply">
+			<div class="container">
+				<p>安心して離婚届の証人を<br class="sp-br">見つけたい方に</p>
+				<h2>離婚届 証人代行サービス</h2>
+				<ul>
+					<li>対面不要</li>
+					<li>メールと書面の郵送のみで完結</li>
+					<li>日本全国対応</li>
+				</ul>
+				<div class="apply-btn">
+					お申し込みはこちら
+					<div class="apply-btn__img1">
+						<img src="img/apply-btn1.png"  alt="">
+					</div>
+					<div class="apply-btn__img2">
+						<img src="img/apply-btn2.png"  alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="about" class="about">
+			<div class="container">
+				<h3 class="sec-title">離婚届の証人とは？</h3>
+				<p class="about-intro">協議離婚（夫婦で話し合い離婚を決めること）をする場合には、離婚届に証人2人署名捺印が必要であると民法（第739条2項、第764条、第765条）に記されています。</p>
+				<div class="civil-codes">
+					<div class="civil-code">
+						<div class="civil-code__item">
+							<p class="civil__30green">民法</p>
+							<p><span class="civil__20black">第</span><span class="civil__36black">739</span><span class="civil__20black">条</span></p>
+						</div>
+						<p class="civi-code__content">婚姻は、戸籍法（昭和22年法律第224号）の定めるところにより届け出ることによって、その効力を生ずる。 ２　前項の届出は、当事者双方及び成年の証人二人以上が署名した書面で、又はこれらの者から口頭で、しなければならない。</p>
+					</div>
+					<div class="civil-code">
+						<div class="civil-code__item">
+							<p class="civil__30green">民法</p>
+							<p><span class="civil__20black">第</span><span class="civil__36black">764</span><span class="civil__20black">条</span></p>
+						</div>
+						<p class="civi-code__content">第738条、第739条及び第747条の規定は、協議上の離婚について準用する。</p>
+					</div>
+					<div class="civil-code">
+						<div class="civil-code__item">
+							<p class="civil__30green">民法</p>
+							<p><span class="civil__20black">第</span><span class="civil__36black">765</span><span class="civil__20black">条</span></p>
+						</div>
+						<p class="civi-code__content">離婚の届出は、その離婚が前条において準用する第739条第2項の規定及び第819条第1項の規定その他の法令の規定に違反しないことを認めた後でなければ、受理することができない。</p>
+					</div>
+					<p class="smaller">※当事者同士の協議で離婚がまとまらず裁判所が間に入る調停離婚、審判離婚、裁判離婚の場合は、離婚届の証人は必要ありません。</p>
+				</div>
+				<div class="conditions">
+					<h4>証人の条件</h4>
+					<p>離婚届の証人については、<span>20歳以上の離婚当事者以外であれば誰でも</span>なれることができます。また日本国籍を有する成人だけでなく外国籍の方であっても証人になることができます。そのため両親・兄弟などの家族や友人に証人を頼む方が一般的です。</p>
+				</div>
+				<div class="about__arrow">
+					<img src="img/arrow.png" alt="">
+				</div>
+				<div class="under-condition">
+					<p>しかし、中には<span>証人が見つからない</span>方や<span>家族や知人に離婚したことを知られたくない</span>という方もいらっしゃると思います。</p>
+					<p>全く知らない赤の他人に依頼することも可能ですが、個人情報の取り扱いなどの問題が発生します。</p>
+				</div>
+			</div>
+		</div>		
+
+		<div class="apply">
+			<div class="container">
+				<div class="apply-top">
+					<img src="img/apply1.png">
+				</div>
+				<p>安心して離婚届の証人を<br class="sp-br">見つけたい方に</p>
+				<h2>離婚届 証人代行サービス</h2>
+				<ul>
+					<li>対面不要</li>
+					<li>メールと書面の郵送のみで完結</li>
+					<li>日本全国対応</li>
+				</ul>
+				<div class="apply-btn">
+					お申し込みはこちら
+					<div class="apply-btn__img1">
+						<img src="img/apply-btn1.png"  alt="">
+					</div>
+					<div class="apply-btn__img2">
+						<img src="img/apply-btn2.png"  alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="method" id="method">
+			<div class="container">
+				<h3 class="sec-title">ご利用方法</h3>
+				<div class="method-inner">
+					<div class="method-first">
+						<div class="method-top">
+							<p>STEP</p>
+							<h3>01</h3>
+						</div>
+						<h3 class="method-title">お申し込み・お支払い</h3>
+						<div class="method-content">
+							<p class="method-text"><a href="#contact">お申し込みフォーム</a>に必要情報を記入しお申し込みください。<br>
+							フォームでのお申し込みの際に、クレジットカード決済<span>※1</span>を行っていただきます。<br>
+							お申し込み後すぐに、ご入力いただいたお客様のメールアドレス宛に自動返信メールが届きます<span>※2</span>ので、メール内に記載されている案内に従って手続きを行ってください。</p>
+							<p class="smaller">※1　支払い方法はクレジットカード払いのみになります。<br>
+							※2　自動返信メールが届かない場合は設定や迷惑メールフォルダーをご確認ください。</p>
+						</div>
+					</div>
+					<div class="method-arrow">
+						<img src="img/arrow.png" alt="">
+					</div>
+					<div class="method-first">
+						<div class="method-top">
+							<p>STEP</p>
+							<h3>02</h3>
+						</div>
+						<h3 class="method-title">必要書類の記入・郵送</h3>
+						<div class="method-content">
+							<p class="method-text">支払い完了後、自動返信メールに記載されているリンクから、離婚届の証人代行に必要な書類をダウンロード・印刷し、情報を記入してください。<br>
+							情報を記入後、記載内容に不備がないか確認し下記住所へ必要書類を郵送ください。</p>
+							<p class="method-address">住所：〒000-0000　●●●●●●●●●●●●●●<br class="sp-br">●●●●●●●●●●●●●●</p>
+						</div>
+					</div>
+					<div class="method-arrow">
+						<img src="img/arrow.png" alt="">
+					</div>
+					<div class="method-first">
+						<div class="method-top">
+							<p>STEP</p>
+							<h3>03</h3>
+						</div>
+						<h3 class="method-title">証人代行後、<br class="sp-br">離婚届の受取</h3>
+						<div class="method-content">						<p class="method-text">ご記入いただいた内容を確認し、証人の署名捺印を行います。証人後、日本郵便のスマートレターでお客様の元へ離婚届を返送致します。 <br>
+						離婚届がお客様のお手元に届いた時点で離婚届証人代行サービス業務の完了となります。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="apply">
+			<div class="container">
+				<p>安心して離婚届の証人を<br class="sp-br">見つけたい方に</p>
+				<h2>離婚届 証人代行サービス</h2>
+				<ul>
+					<li>対面不要</li>
+					<li>メールと書面の郵送のみで完結</li>
+					<li>日本全国対応</li>
+				</ul>
+				<div class="apply-btn">
+					お申し込みはこちら
+					<div class="apply-btn__img1">
+						<img src="img/apply-btn1.png"  alt="">
+					</div>
+					<div class="apply-btn__img2">
+						<img src="img/apply-btn2.png"  alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="contact" id="contact">
+			<div class="container">
+				<h3 class="sec-title">お申し込み</h3>
+				<p class="contact-top">必要事項をご記入の上、お申し込みください。</p>
+				<div class="contact-caution">
+					<p class="caution-top">【注意事項】</p>
+					<p class="caution-text">お申し込み後すぐにご入力いただいたメールアドレス宛に自動返信メールが送られます。届かない場合は、ご記入のメールアドレスに間違いがあるか、迷惑メール設定が原因の場合がございますので、下記ご確認ください。</p>
+					<div class="caution-item">
+						<p><span class="caution-gray">■</span> 迷惑メールフォルダの確認</p>
+						<p><span class="caution-gray">■</span> 「●●@●●」からのメールを受信できるよう「ドメイン指定受信」の設定の変更</p>
+						<p><span class="caution-gray">■</span> 「お問合せ」よりメールが届かない旨と電話番号を記載してご連絡ください</p>
+					</div>
+				</div>
+				<div class="contact-form">
+					<form action="confirm.php" method="post">
+						<div class="form-item name">
+							<p class="form-title">お名前</p>
+							<input type="text" name="name" required>
+						</div>
+						<div class="form-item address">
+							<p class="form-title">ご住所</p>
+							<p class="smaller">※別の返送先や郵便局留めのご希望がございましたら備考欄にご記入ください。</p>
+							<p class="form-content">郵便番号</p>
+							<input type="text" name="post-code" class="short" required>
+							<p class="form-content">都道府県</p>
+							<input type="text" name="prefectures" class="short" required>
+							<p class="form-content">市区町村番地</p>
+							<input type="text" name="city-address" class="long" required>
+							<p class="form-content">マンション名/ビル名</p>
+							<input type="text" name="building-name" class="long">
+						</div>
+						<div class="form-item email">
+							<p class="form-title">メールアドレス</p>
+							<input type="email" name="email-address" required>
+						</div>
+						<div class="form-item radio">
+							<p class="form-title">お申し込みタイプ</p>
+							<div class="radio-items">
+								<p class="radio-item"><input type="radio" name="type" value="one" required>離婚届・婚姻届 証人代行1名：●,●●●円（税込）</p>
+								<p class="radio-item"><input type="radio" name="type" value="two">離婚届・婚姻届 証人代行2名：●,●●●円（税込）</p>
+							</div>
+						</div>
+						<div class="form-item checkbox">
+							<p class="form-title">離婚・婚姻の合意について</p>
+							<div class="checkbox-items">
+								<p class="checkbox-item"><input type="checkbox" name="agreement1" value="" required>夫婦ともに離婚または婚姻することに合意しています。</p>
+								<p class="checkbox-item"><input type="checkbox" name="agreement2" value="" required>離婚届・婚姻届に無断代筆その他の違法行為はありません。</p>
+								<p class="checkbox-item"><input type="checkbox" name="agreement3" value="" required>トラブルの原因となる行為はいたしません。</p>
+							</div>
+							<p class="smaller">※全てにチェックを入れなければ送信することはできません。<br>
+							<span>※離婚届(婚姻届)の郵送の際は、夫・妻それぞれの自署・捺印がされていなければ受付できません。</span></p>
+						</div>
+						<div class="form-item checkbox">
+							<p class="form-title">ご本人確認書類について</p>
+							<div class="checkbox-items">
+								<p class="checkbox-item"><input type="radio" name="document" value="copy" required>ご本人確認書類をコピーして離婚届(婚姻届)と一緒に直接郵送で送る</p>
+								<p class="checkbox-item"><input type="radio" name="document" value="image">ご本人確認書類を画像ファイルで送る</p>
+							</div>
+							<p class="form-text">以下、【ご本人確認書類を画像ファイルで送る】にチェックをされた方はファイルを選択してください。</p>
+							<div class="up-image">
+								<input type="file" name="up-image-btn1" size="">
+								<input type="file" name="up-image-btn2" size="">
+							</div>
+							<p class="smaller"><span class="smaller-red">※ご本人確認書類は、ご依頼人様（夫・妻のどちらか１名）のみで構いません。</span><br>
+							※ご本人確認書類は、運転免許証、健康保険証、国民年金手帳、パスポート、住民票など氏名・住所等が確認できるもの１点をご準備ください。運転免許証の方で住所変更などで裏面記載の場合は、表面・裏面の２枚をお送りください。<br>
+							※画像はスマートフォン等で撮影したもので大丈夫です。後から画像を送りたい方は「●●@●●」に画像を添付して送信していただいても結構です。</p>
+						</div>
+						<div class="form-item">
+						<p class="form-title-any">備考</p>
+						<textarea name="remarks" wrap="soft"></textarea>
+						</div>
+						<div class="form-item privacy checkbox">
+							<input type="checkbox" name="privacy">「<a href="">プライバシーポリシー</a>」の内容を確認し、同意する
+						</div>
+						<div class="form-send">
+							<input type="submit" value="送　信" value="">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="l-footer">
+			<div class="footer-upper">
+				<div class="footer-menu">
+					<ul>
+						<li><a href="">会社概要</a></li>
+						<li><a href="">プライバシーポリシー</a></li>
+					</ul>
+				</div>
+				<div class="footer-contact">
+					<p>お問い合せ先</p>
+					<ul>
+						<li class="footer-mail">xxxxxxx@xxxxx</li>
+						<li class="footer-tel">000-0000-0000</li>
+					</ul>
+				</div>
+			</div>
+			<p class="copyright">&copy; 2021 xxxxxxxx</p>
+		</div>
+	</footer>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
+</body>
+</html>
