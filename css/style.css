@@ -259,7 +259,7 @@ header .l-header .header-fixed .header-top .sp-menu {
 }
 
 header .l-header .header-bottom {
-  width: 700px;
+  width: 51%;
   position: absolute;
   left: 7%;
   bottom: 0;

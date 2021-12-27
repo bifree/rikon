@@ -359,26 +359,26 @@
 					</div>
 				</div>
 				<div class="contact-form">
-					<form action="confirm.php" method="POST" enctype="multipart/form-data">
+					<form action="confirm.php" method="post">
 						<div class="form-item name">
 							<p class="form-title">お名前</p>
-							<input type="text" name="name" id="name" required>
+							<input type="text" name="name" required>
 						</div>
 						<div class="form-item address">
 							<p class="form-title">ご住所</p>
 							<p class="smaller">※別の返送先や郵便局留めのご希望がございましたら備考欄にご記入ください。</p>
 							<p class="form-content">郵便番号</p>
-							<input type="text" name="postcode" id="postcode" class="short" required>
+							<input type="text" name="postcode" class="short" required>
 							<p class="form-content">都道府県</p>
-							<input type="text" name="prefectures" id="prefectures" class="short" required>
+							<input type="text" name="prefectures" class="short" required>
 							<p class="form-content">市区町村番地</p>
-							<input type="text" name="cityaddress" id="cityaddress" class="long" required>
+							<input type="text" name="cityaddress" class="long" required>
 							<p class="form-content">マンション名/ビル名</p>
-							<input type="text" name="building" id="building" class="long">
+							<input type="text" name="building" class="long">
 						</div>
 						<div class="form-item email">
 							<p class="form-title">メールアドレス</p>
-							<input type="email" name="email" id="email" required>
+							<input type="email" name="emailaddress" required>
 						</div>
 						<div class="form-item radio">
 							<p class="form-title">お申し込みタイプ</p>
@@ -405,19 +405,19 @@
 							</div>
 							<p class="form-text">以下、【ご本人確認書類を画像ファイルで送る】にチェックをされた方はファイルを選択してください。</p>
 							<div class="up-image">
-								<input type="file" id="fname1" name="fname1" size="">
-								<input type="file" id="fname2" name="fname2" size="">
+								<input type="file" name="up-image-btn1" size="">
+								<input type="file" name="up-image-btn2" size="">
 							</div>
 							<p class="smaller"><span class="smaller-red">※ご本人確認書類は、ご依頼人様（夫・妻のどちらか１名）のみで構いません。</span><br>
 							※ご本人確認書類は、運転免許証、健康保険証、国民年金手帳、パスポート、住民票など氏名・住所等が確認できるもの１点をご準備ください。運転免許証の方で住所変更などで裏面記載の場合は、表面・裏面の２枚をお送りください。<br>
 							※画像はスマートフォン等で撮影したもので大丈夫です。後から画像を送りたい方は「●●@●●」に画像を添付して送信していただいても結構です。</p>
 						</div>
 						<div class="form-item">
-							<p class="form-title-any">備考</p>
-							<textarea name="remarks" wrap="soft"></textarea>
-							</div>
+						<p class="form-title-any">備考</p>
+						<textarea name="remarks" wrap="soft"></textarea>
+						</div>
 						<div class="form-item privacy checkbox">
-							<input type="checkbox" name="privacy" required>「<a href="">プライバシーポリシー</a>」の内容を確認し、同意する
+							<input type="checkbox" name="privacy">「<a href="">プライバシーポリシー</a>」の内容を確認し、同意する
 						</div>
 						<div class="form-send">
 							<input type="submit" value="送　信">
