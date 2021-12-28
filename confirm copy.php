@@ -27,12 +27,10 @@ if ($_SERVER ['REQUEST_METHOD'] === 'POST') {
     }
 
 
-    $dir = "/home/setomasaki46/bifree222.com/public_html/rikon/";
+    $dir = "画像保存先の絶対パス--------------------------";
     $tempfile1 = $_FILES['fname1']['tmp_name'];
     $imagename1 = $_FILES['fname1']['name'];
     $filename1 = $dir.$imagename1;
-    echo $imagename1;
-    echo $filename1;
     if (is_uploaded_file($tempfile1)) {
         if ( move_uploaded_file($tempfile1, $filename1 )) {
             echo $filename1 . "をアップロードしました。";
@@ -46,40 +44,16 @@ if ($_SERVER ['REQUEST_METHOD'] === 'POST') {
     $tempfile2 = $_FILES['fname2']['tmp_name'];
     $imagename2 = $_FILES['fname2']['name'];
     $filename2 = $dir.$imagename2;
-    echo $imagename2;
-    echo $filename2;
     if (is_uploaded_file($tempfile2)) {
-        if ( move_uploaded_file($tempfile2, $filename2 )) {
-            echo $filename2 . "をアップロードしました。";
-        } else {
-            echo "ファイルをアップロードできません。";
-        }
-    } else {
-        echo "ファイルが選択されていません。";
-    }
+      if ( move_uploaded_file($tempfile2, $filename2 )) {
+          echo $filename2 . "をアップロードしました。";
+      } else {
+          echo "ファイルをアップロードできません。";
+      }
+  } else {
+      echo "ファイルが選択されていません。";
+  }
 
-
-
-  // $error = '';
-  // if ($name == '') {
-  //   $error = $error.'<p>お名前が入力されていません。</p>';
-  // }
-  // if ($email == '') {
-  //   $error = $error.'<p>メールアドレスが入力されていません。</p>';
-  // }
-  // if ($tel == '') {
-  //   $error = $error.'<p>お電話番号が入力されていません。</p>';
-  // }
-  // if ($content == '') {
-  //   $error = $error.'<p>問い合わせ内容が入力されていません。</p>';
-  // }
-  // if ($error != '') {
-  //   echo $error;
-
-  //   echo '<form method="post" action="index.html">';
-  //   echo '<input type="submit" name="backbtn" value="前のページへ戻る">';
-  //   echo '</form>';
-  // } else {
     $mail_header  = "From: " . $email . "\r\n";
     $mail_header .= "MIME-Version: 1.0\r\n";
     $mail_header .= "Content-Type: multipart/mixed; boundary=\"__PHPRECIPE__\"\r\n";
@@ -105,38 +79,12 @@ if ($_SERVER ['REQUEST_METHOD'] === 'POST') {
     $mail .= $type."\n\n";
     $mail .= "【お申し込みタイプ】\n";
     $mail .= $document."\n\n";
+    $mail .= "<img src=----------------------------------------/$imagename1>"."\n\n";
+    $mail .= "<img src=----------------------------------------/$imagename2>"."\n\n";
+
     $mail .= "--__PHPRECIPE__\r\n";
-    
 
-    // 添付ファイルの処理 (注意:content typeで拡張子を指定する！！)
-    $handle1 = fopen($filename1, 'r');
-    $attachFile1 = fread($handle1, filesize($filename1));
-    fclose($handle1);
-    $attachEncode1 = base64_encode($attachFile1);
-
-    $handle2 = fopen($filename2, 'r');
-    $attachFile2 = fread($handle2, filesize($filename2));
-    fclose($handle2);
-    $attachEncode2 = base64_encode($attachFile2);
-
-    //添付ファイルをbodyに追記
-    $mail .= "Content-Type: image/png; name=\"$imagename1\"\r\n";
-    $mail .= "Content-Transfer-Encoding: base64\r\n";
-    $mail .= "Content-Disposition: attachment; filename=\"$imagename1\"\r\n";
-    $mail .= "\r\n";
-    $mail .= chunk_split($attachEncode1) . "\r\n";
-
-    $mail .= "--__PHPRECIPE__--\r\n";
-
-    $mail .= "Content-Type: image/png; name=\"$imagename2\"\r\n";
-    $mail .= "Content-Transfer-Encoding: base64\r\n";
-    $mail .= "Content-Disposition: attachment; filename=\"$imagename2\"\r\n";
-    $mail .= "\r\n";
-    $mail .= chunk_split($attachEncode2) . "\r\n";
-
-    $mail .= "--__PHPRECIPE__--\r\n";
-
-    $mail_to = "a-masaki@bifree.org";
+    $mail_to = "$email, サイト側メールアドレス@xx.jp";
     $mail_subject = "メールフォームより送信されました";
     $mail_body = $mail;
 
@@ -147,13 +95,13 @@ if ($_SERVER ['REQUEST_METHOD'] === 'POST') {
       // echo '<form method="post" action="index.html">';
       // echo '<input type="submit" name="backbtn" value="前のページへ戻る">';
       // echo '</form>';
-    // header('Location: https://bifree222.com/rikon/thanks.html');
+      header('Location: -----------------------------/thanks.html');
     exit;
     } else {
-    echo '<p>メール送信でエラーが発生しました。</p>';
-    echo '<form method="post" action="index.html">';
-    echo '<input type="submit" name="backbtn" value="前のページへ戻る">';
-    echo '</form>';
+      echo '<p>メール送信でエラーが発生しました。</p>';
+      echo '<form method="post" action="index.html">';
+      echo '<input type="submit" name="backbtn" value="前のページへ戻る">';
+      echo '</form>';
     }
   // }
 

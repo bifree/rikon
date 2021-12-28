@@ -81,11 +81,16 @@ if ($_SERVER ['REQUEST_METHOD'] === 'POST') {
   //   echo '</form>';
   // } else {
     $mail_header  = "From: " . $email . "\r\n";
-    $mail_header .= "MIME-Version: 1.0\r\n";
-    $mail_header .= "Content-Type: multipart/mixed; boundary=\"__PHPRECIPE__\"\r\n";
-    $mail_header .= "\r\n";
+    // $mail_header .= "MIME-Version: 1.0\r\n";
+    // $mail_header .= "Content-Type: multipart/mixed; boundary=\"__PHPRECIPE__\"\r\n";
+    // headers for attachment 
+    // boundary 
+    $semi_rand = md5(time()); 
+    $mime_boundary = "==Multipart_Boundary_x{$semi_rand}x";
+    $mail_header .= "MIME-Version: 1.0\r\n" . "Content-Type: multipart/mixed;\r\n" . " boundary=\"{$mime_boundary}\"";
+    // $mail_header .= "\r\n";
 
-    $mail = "--__PHPRECIPE__\r\n";
+    // $mail = "--__PHPRECIPE__\r\n";
     $mail .= "Content-Type: text/plain; charset=\"ISO-2022-JP\"\r\n";
     $mail .= "\r\n";
     $mail .= "以下の内容が送信されました。\n\n";
@@ -105,7 +110,7 @@ if ($_SERVER ['REQUEST_METHOD'] === 'POST') {
     $mail .= $type."\n\n";
     $mail .= "【お申し込みタイプ】\n";
     $mail .= $document."\n\n";
-    $mail .= "--__PHPRECIPE__\r\n";
+    // $mail .= "--__PHPRECIPE__\r\n";
     
 
     // 添付ファイルの処理 (注意:content typeで拡張子を指定する！！)
@@ -119,6 +124,10 @@ if ($_SERVER ['REQUEST_METHOD'] === 'POST') {
     fclose($handle2);
     $attachEncode2 = base64_encode($attachFile2);
 
+    $mail .= "--{$mime_boundary}\n";
+
+    echo "test";
+    
     //添付ファイルをbodyに追記
     $mail .= "Content-Type: image/png; name=\"$imagename1\"\r\n";
     $mail .= "Content-Transfer-Encoding: base64\r\n";
@@ -126,7 +135,8 @@ if ($_SERVER ['REQUEST_METHOD'] === 'POST') {
     $mail .= "\r\n";
     $mail .= chunk_split($attachEncode1) . "\r\n";
 
-    $mail .= "--__PHPRECIPE__--\r\n";
+    // $mail .= "--__PHPRECIPE__--\r\n";
+    $mail .= "--{$mime_boundary}\n";
 
     $mail .= "Content-Type: image/png; name=\"$imagename2\"\r\n";
     $mail .= "Content-Transfer-Encoding: base64\r\n";
@@ -134,7 +144,8 @@ if ($_SERVER ['REQUEST_METHOD'] === 'POST') {
     $mail .= "\r\n";
     $mail .= chunk_split($attachEncode2) . "\r\n";
 
-    $mail .= "--__PHPRECIPE__--\r\n";
+    // $mail .= "--__PHPRECIPE__--\r\n";
+    $mail .= "--{$mime_boundary}\n";
 
     $mail_to = "a-masaki@bifree.org";
     $mail_subject = "メールフォームより送信されました";
